@@ -12,6 +12,25 @@ ul{
     list-style-type: none;
     padding: 0;
 }
+a, a:hover{
+  text-decoration: none;
+}
+
+/*Common*/
+.p-flex{
+  display: flex;
+}
+.p-flex-align-center{
+  align-items: center;
+}
+.p-flex-j-sb{
+  justify-content: space-between;
+}
+.p-cursor{
+  cursor: pointer;
+}
+
+/* Wrapper Class*/
 .p-wrapper{
     position: relative;
 }
