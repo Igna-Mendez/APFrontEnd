@@ -6,17 +6,9 @@
     background-position: top;
     background-repeat: no-repeat;
 }
-.p-tag{
-    background: #989898;
-    color: #fff;
-    padding: 5px 10px;
-    font-size: 14px;
-}
-.p-des{
-    color: #777777;
-    width: 80%;
-}
-.p-readmore{
+
+
+.nextpage{
     position: absolute;
     bottom: 0;
     right: 0;

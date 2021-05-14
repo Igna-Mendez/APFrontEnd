@@ -22,6 +22,16 @@ h1, h2, h3, h4, h5, h6{
   font-weight: 700;
 }
 /*Common*/
+.p-des{
+  color: #777777;
+  width: 80%;
+}
+.p-tag{
+  background: #989898;
+  color: #fff;
+  padding: 5px 10px;
+  font-size: 14px;
+}
 .p-flex{
   display: flex;
 }
@@ -34,16 +44,16 @@ h1, h2, h3, h4, h5, h6{
 .p-cursor{
   cursor: pointer;
 }
-.p-readmore{
+.nextpage{
   color: #000;
   font-size: 20px;
   font-weight: 600;
 }
-.p-readmore img{
+.nextpage img{
   transition: all .5s;
   transform: translateX(0);
 }
-.p-readmore:hover img{
+.nextpage:hover img{
   transform: TranslateX(5px);
 }
 /* Wrapper Class*/
