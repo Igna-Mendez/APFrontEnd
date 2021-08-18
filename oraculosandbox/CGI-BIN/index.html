@@ -1,0 +1,97 @@
+<html>
+<BODY bgcolor="#99ccff" text="#000000" link="#000000" vlink="#000000" alink="#000000">
+
+<center>Datos del Buscador</center><br>
+
+En el directorio CGI-BIN tiene una carpeta (buscador) con un buscador el cual debera colocar todos sus archivos (4) en el lugar mas alto desde donde desea comenzar a buscar.
+Luego desde la pagina que desea mostrar el buscador debera hacer referencia la archivo 
+buscador.asp
+El buscador buecara las palabras relacionadas en todos los archivos del sitio, con lo cual
+no necesitara realizar indexaciones de bases.<br><br><br>
+
+
+
+
+<center>Datos del Administrador de Banners</center><br>
+
+En el directorio CGI-BIN tiene una carpeta (Banner) con un administrador de banners.
+Para su correcto funcionamiento debera poner en la pagina que desee el buscador el siguiente codigo:<br><br>
+
+&lt;HTML&gt;<br>
+&lt;HEAD&gt;<br>
+&lt;TITLE&gt;Random Banner from DB Example&lt;/TITLE&gt;<br>
+&lt;!--#INCLUDE FILE="cgi-bin/banner/banners.shtml"--&gt;<br> 
+&lt;/HEAD&gt;<br>
+&lt;BODY&gt;<br>
+&lt;%<br>
+Rnd_Banner()<br>
+%&gt;<br>
+&lt;/BODY&gt;<br>
+&lt;/HTML&gt;<br>
+
+<br><br>
+
+En http://www.sudominio/cgi-bin/banner/admin/
+encontrara un panel de control del administrador de banner en el cual
+ud podra subir las imagenes necesarias para que su funcionamiento sa exitoso.
+Las imagenes se instalaran en una base de  datos Access.
+<br><br><br>
+
+
+
+
+
+<center>Contador Gráfico</center><br>
+
+Esta aplicacion es sencilla, solo debera colocar el siguiente codigo en la 
+pagina donde desea que le aparezca el contador.
+El codigo es el siguiente:<br><br>
+
+&lt;!--#INCLUDE FILE="./cgi-bin/counter/contador.asp"--&gt;
+
+<br><br>
+
+Esto le permitira ver su contador personal.
+Para resetear las visitas o setearlas debera pornerlas en el archivo "contador.txt" que se encuentra en /cgi-bin/counter/.
+
+<br><br><br>
+
+
+<center>Contador de Texto</center><br>
+
+Esta aplicacion es sencilla, solo debera colocar el siguiente codigo en la 
+pagina donde desea que le aparezca el contador.
+El codigo es el siguiente:<br><br>
+
+&lt;!--#INCLUDE FILE="./cgi-bin/textcount/contador.asp"--&gt;
+
+<br><br>
+
+Esto le permitira ver su contador personal.
+Para resetear las visitas o setearlas debera pornerlas en el archivo "contador.txt" que se encuentra en /cgi-bin/textcount/.
+
+<br><br><br>
+
+
+
+<center>ToForo</center><br>
+
+El foro se encuentra dentro de la carpeta cgi-bin/Forum/ alli vera el foro por defecto.
+Para la administracion ud lo puede ver por /cgi-bin/Forum/admin.
+Alli podra ud administrar la base Access que el mismo utiliza para guardar los datos.
+La baja y modificacion de los mismos debera realizarlos bajando la base y corrigiendola por 
+
+<br><br><br>
+
+<center>Lista de Correo (Mailling List)</center><br>
+
+El mailing List fue instalado y se encuetra dentro de la carpeta cgi-bin con el nombre mlm
+Para acceder por web a la misma debera hacerlo por http://www.sudominio/cgi-bin/mlm/
+Allí verá el archivo (subscri.asp) de suscripcion donde la persona que desee suscribirse debera realizarlo a la lista que le aparecera arriba cuando ud, ya haya creado las mismas.
+En http://www.sudominio/cgi-bin/mlm/admin/ colocando su usuario y pass le aparecera la manera en la cual ud podra realizar las respectivas actualizaciones de la lista de correo.
+Cada passo esta comentado para una mejora administracion.
+
+
+
+
+</html>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<siteInfo>
+	<copyright>
+		<![CDATA[<font color='#000000'><u><a href="http://www.oraculosemanal.com">© 2012 OraculoSemanal.com</a></u></font>]]>
+	</copyright>
+	
+	<social>
+		<item icon="icons/1.png" link="http://twitter.com/eloraculodice"/>
+		<item icon="icons/2.png" link="http://facebook.com/oraculosemanal"/>
+	</social>
+	
+	<contactInfo>
+		<!--you can add more lines , but it's limited in the height ,the "split line" is auto created-->
+		<info>
+			<![CDATA[<b><FONT color='#FFFFFF' size='12'>SITIO WEB</FONT></b><br><FONT color='#FFFFFF'  size='10'>www.oraculosemanal.com</FONT><br><FONT color='#FFFFFF'  size='12'><b>E-MAIL</b></FONT><br><FONT color='#FFFFFF'  size='10'>info@oraculosemanal.com</FONT><br><FONT color='#FFFFFF'  size='12'><b>FACEBOOK</b></FONT><br><FONT color='#FFFFFF'  size='10'>Oraculo Semanal</FONT><br><FONT color='#FFFFFF'  size='12'><b>TWITTER</b></FONT><br><FONT color='#FFFFFF'  size='10'>@eloraculodice</FONT>]]>
+		</info>
+	
+		<info>
+			<![CDATA[<b><FONT color='#FFFFFF' size='12'>Information</FONT></b><br><FONT color='#FFFFFF' size='10'>Hyperlink tincidunt libero sit amet ,Suspendisse turpis augue, estibulum,<br>Consequat rutrum<<br>Fusce ac justo at nibh pulvinar<br>Curabitur est risus.<br>ornare posuere velit.</FONT>]]>
+		</info>
+		
+		<info>
+			<![CDATA[<b><FONT color='#FFFFFF' size='12'>Add another line</FONT></b><br><FONT color='#FFFFFF' size='10'>Fusce ac justo at nibh pulvinar<br>Curabitur est risus.<br>ornare posuere velit.</FONT>]]>
+		</info>
+	</contactInfo>
+
+</siteInfo>
+
+
+ 

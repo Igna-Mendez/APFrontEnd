@@ -1,0 +1,252 @@
+<html>
+<head>
+<title>ASP Formulario por Correo</title>
+<script language="JavaScript">
+
+function copyEmail(f) {
+
+  var s;
+
+  // Copia el correo del usuario al campo '_recipients'.
+
+  s = f.elements["Email Address"].value;
+  if (s != "") {
+    f.elements["_recipients"].value = s;
+    return true;
+  }
+  alert("Por favor ingrese su cuenta de correo.");
+  f.elements["Email Address"].focus();
+  return false;
+}
+
+</script>
+</head>
+<body bgcolor="#ffffff">
+<center>
+
+<table border=0 cellpadding=8 cellspacing=0 width=550>
+<tr><td align=center colspan=2>
+<hr noshade>
+<font color="#cc6600" face="Arial,Helvetica" size=4><b>ToWebs Formulario por Correo</b></font>
+<hr noshade>
+</td></tr>
+<tr>
+<td bgcolor="#cccccc" width=100>&nbsp;</td>
+<td width=450>
+<font face="Arial,Helvetica" size=2>
+
+<p>
+<form action="formmail.asp" method="post" onsubmit="return copyEmail(this)">
+<input name="_recipients" type="hidden" value="">
+<input name="_subject" type="hidden" value="Suscripcion al Newsletter">
+<input name="_replyToField" type="hidden" value="Email Address">
+<input name="_requiredFields" type="hidden" value="Customer Name, Address, City, State, Zip Code, Email Address, Delivery">
+<input name="_envars" type="hidden" value="HTTP_REFERER, HTTP_USER_AGENT, REMOTE_ADDR">
+<font size=3><b>Suscripcion al Newsletter</b></font>
+<p>
+<table border=0 cellpadding=2 cellspacing=0>
+<tr valign=bottom>
+  <td><font face="Arial,Helvetica" size=2><b>*Nombre:</b></font></td>
+  <td colspan=3><input name="Customer Name" size=30 value=""></td>
+</tr>
+<tr valign=bottom>
+  <td><font face="Arial,Helvetica" size=2><b>*Dirección:</b></font></td>
+  <td colspan=3><input name="Address" size=30 value=""></td>
+</tr>
+<tr valign=bottom>
+  <td><font face="Arial,Helvetica" size=2><b>*Ciudad:</b></font></td>
+  <td colspan=3><input name="City" size=15 value=""></td>
+<tr>
+<tr valign=bottom>
+  <td><font face="Arial,Helvetica" size=2><b>*Estado:</b></font></td>
+  <td><select name="State" size=1>
+      <option value="" selected>Elegir una opción</option>
+      <option value="AL">Alabama</option>
+      <option value="AK">Alaska</option>
+      <option value="AZ">Arizona</option>
+      <option value="AR">Arkansas</option>
+      <option value="CA">California</option>
+      <option value="CO">Colorado</option>
+      <option value="CT">Connecticut</option>
+      <option value="DE">Delaware</option>
+      <option value="DC">District of Columbia</option>
+      <option value="FL">Florida</option>
+      <option value="GA">Georgia</option>
+      <option value="HI">Hawaii</option>
+      <option value="ID">Idaho</option>
+      <option value="IL">Illinois</option>
+      <option value="IN">Indiana</option>
+      <option value="IA">Iowa</option>
+      <option value="KS">Kansas</option>
+      <option value="KY">Kentucky</option>
+      <option value="LA">Louisiana</option>
+      <option value="ME">Maine</option>
+      <option value="MD">Maryland</option>
+      <option value="MA">Massachusetts</option>
+      <option value="MI">Michigan</option>
+      <option value="MN">Minnesota</option>
+      <option value="MS">Mississippi</option>
+      <option value="MO">Missouri</option>
+      <option value="MT">Montana</option>
+      <option value="NE">Nebraska</option>
+      <option value="NV">Nevada</option>
+      <option value="NH">New Hampshire</option>
+      <option value="NJ">New Jersey</option>
+      <option value="NM">New Mexico</option>
+      <option value="NY">New York</option>
+      <option value="NC">North Carolina</option>
+      <option value="ND">North Dakota</option>
+      <option value="OH">Ohio</option>
+      <option value="OK">Oklahoma</option>
+      <option value="OR">Oregon</option>
+      <option value="PA">Pennsylvania</option>
+      <option value="RI">Rhode Island</option>
+      <option value="SC">South Carolina</option>
+      <option value="SD">South Dakota</option>
+      <option value="TN">Tennessee</option>
+      <option value="TX">Texas</option>
+      <option value="UT">Utah</option>
+      <option value="VT">Vermont</option>
+      <option value="VA">Virginia</option>
+      <option value="WA">Washington</option>
+      <option value="WV">West Virginia</option>
+      <option value="WI">Wisconsin</option>
+      <option value="WY">Wyoming</option>
+    </select>
+  </td>
+  <td><font face="Arial,Helvetica" size=2><b>*Código Postal:</b></font></td>
+  <td><input name="Zip Code" size=5 maxlength=5 value=""></td>
+</tr>
+<tr>
+  <td><font face="Arial,Helvetica" size=2><b>Teléfono:</b></font></td>
+  <td><input name="Phone Number" size=12 value=""></td>
+</tr>
+<tr>
+  <td><font face="Arial,Helvetica" size=2><b>*Dirección de correo:</b></font></td>
+  <td><input name="Email Address" size=20 value=""></td>
+</tr>
+</table>
+<p>
+<table border=0 cellpadding=2 cellspacing=0>
+<tr valign=top>
+  <td><font face="Arial,Helvetica" size=2><b>*Elegir modo de envío:</b><br>
+      <input type="radio" name="Delivery" value="postal">Correo hardcopy vía USPS.<br>
+      <input type="radio" name="Delivery" value="email">Enviar a la cuenta de correo.
+      </font>
+  </td>
+  <td>&nbsp;</td>
+  <td><font face="Arial,Helvetica" size=2><b>Other:</b></font><br>
+      <input name="Promociones" type=checkbox value="yes"><font face="Arial,Helvetica" size=2>No deseo que me envien información por correo.</font><br>
+  </td>
+  <td>&nbsp;</td>
+</tr>
+<tr valign=top>
+  <td colspan=3><font face="Arial,Helvetica" size=2><b>Comentarios</b></font><br>
+  <textarea name="Comments" rows=3 cols=40></textarea>
+  </td>
+</tr>
+</table>
+<p>
+<input type=submit value="Submit"> <input type=reset value="Clear">
+</form>
+<p>
+<b>Configuración del Formulario</b>
+<p>
+Para que este formulario le funcione en forma correcta debera completar algunos
+campos:
+<p>
+<table bgcolor="#000000" border=0 cellpadding=1 cellspacing=0><tr><td>
+<table bgcolor="#ffffff" border=0 cellpadding=2 cellspacing=1 width="100%">
+<tr bgcolor="#cccccc" valign=bottom>
+  <td><font face="Arial,Helvetica" size=2><b>Nombre de Campo</b></font></td>
+  <td><font face="Arial,Helvetica" size=2><b>Descripción</b></font></td>
+</tr>
+<tr valign=top>
+  <td><font face="Arial,Helvetica" size=2>_recipients</font></td>
+  <td><font face="Arial,Helvetica" size=2><b>Necesario.</b>
+  Donde se enviara el correo con la suscripción. Multiple recipients pueden ser utilizados, y
+  deberan ser separados por comas. (',').
+  <p>
+  <pre>
+  &lt;input name="_recipients" type="hidden" value="webmaster@abc.net"&gt;
+  OR
+  &lt;input name="_recipients" type="hidden"
+   value="sales@xyz.com, orders@xyz.com"&gt;
+  </pre>
+  </font></td>
+</tr>
+<tr valign=top>
+  <td><font face="Arial,Helvetica" size=2>_replyTo</font></td>
+  <td><font face="Arial,Helvetica" size=2>
+  Cuenta de correo que sera utilizada en la cabecera del correo para la respuesta.
+  <p>
+  <pre>
+  &lt;input name="_replyTo" type="hidden" value="techsupt@xyz.com"&gt;
+  </pre>
+  </font></td>
+</tr>
+<tr valign=top>
+  <td><font face="Arial,Helvetica" size=2>_replyToField</font></td>
+  <td><font face="Arial,Helvetica" size=2>
+  Igual _replyTo salvo que ud especifica el nombre de otro campo del formulario.
+  Generalmente se utiliza para el campo donde se hace referencia al correo del que se suscribe.
+  <p>
+  <pre>
+  &lt;input name="_replyToField" type="hidden" value="Email Address"&gt;
+  ...
+  Your email address: &lt;input name="Email Address" type="text" size=20>
+  </pre>
+  </font></td>
+</tr>
+<tr valign=top>
+  <td><font face="Arial,Helvetica" size=2>_subject</font></td>
+  <td><font face="Arial,Helvetica" size=2>
+  Especifica el asunto del correo.
+  <p>
+  <pre>
+  &lt;input name="_subject" type="hidden" value="Site Feedback"&gt;
+  </pre>
+  </font></td>
+</tr>
+<tr valign=top>
+  <td><font face="Arial,Helvetica" size=2>_requiredFields</font></td>
+  <td><font face="Arial,Helvetica" size=2>
+  Una coma delimita la cantidad de campos que debería chequear el formmail.
+  Cualquier valor que falte causara un alerta de error evitando la suscripción.
+  <p>
+  <pre>
+  &lt;input name="_requiredFields" type="hidden"
+  value="Nombre, Direccion, Ciudad, Estado, Codigo Postal, Correo"&gt;
+  </pre>
+  </font></td>
+</tr>
+<tr valign=top>
+  <td><font face="Arial,Helvetica" size=2>_fieldOrder</font></td>
+  <td><font face="Arial,Helvetica" size=2>
+  Una coma delimita la lista de campos. Cuando se genere el correo, los campos y
+  los valores se mostraran en el orden que ud los coloque. 
+  <p>
+  <pre>
+  &lt;input name="_fieldOrder" type="hidden"
+  value="Nombre, Correo, Teléfono, Dirección, Ciudad, Estado, Código Postal"&gt;
+  </pre>
+  <p>
+  </font></td>
+</tr>
+<tr valign=top>
+  <td><font face="Arial,Helvetica" size=2>_redirect</font></td>
+  <td><font face="Arial,Helvetica" size=2>
+  Normalmente cuando se envia el correo, se muestra una pagina comentando esto, 
+  pero si di desea puede colocar una pagina de agradecimiento que ud desee.
+  <p>
+  <pre>
+  &lt;input name="_redirect" type="hidden" value="termsofservice.html"&gt;
+  </pre>
+  </font></td>
+</tr>
+</table>
+</td></tr></table>
+<p>
+</center>
+</body>
+</html>
