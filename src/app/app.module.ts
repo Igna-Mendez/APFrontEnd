@@ -12,6 +12,11 @@ import { AngularMaterialModule } from './angular-material-module';
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { MatButtonModule } from '@angular/material/button';
+import { MatDialogModule } from '@angular/material/dialog';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faGit } from '@fortawesome/free-brands-svg-icons';
 
 @NgModule({
   declarations: [
@@ -19,17 +24,19 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     HeaderComponent,
     SigninComponent,
     RegisterComponent,
-  
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    MatDialogModule,
     BrowserAnimationsModule,
     AngularMaterialModule,
-    FlexLayoutModule, FormsModule, ReactiveFormsModule 
+    FlexLayoutModule, FormsModule, ReactiveFormsModule, MatButtonModule, FontAwesomeModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
+  entryComponents: [RegisterComponent, SigninComponent]
 })
 export class AppModule { }
