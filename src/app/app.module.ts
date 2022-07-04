@@ -19,24 +19,22 @@ import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faGit } from '@fortawesome/free-brands-svg-icons';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    HeaderComponent,
-    SigninComponent,
-    RegisterComponent,
-    
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    MatDialogModule,
-    BrowserAnimationsModule,
-    AngularMaterialModule,
-    FlexLayoutModule, FormsModule, ReactiveFormsModule, MatButtonModule, FontAwesomeModule,
-  ],
-  providers: [],
-  bootstrap: [AppComponent],
-  schemas: [CUSTOM_ELEMENTS_SCHEMA],
-  entryComponents: [RegisterComponent, SigninComponent]
+    declarations: [
+        AppComponent,
+        HeaderComponent,
+        SigninComponent,
+        RegisterComponent,
+    ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        MatDialogModule,
+        BrowserAnimationsModule,
+        AngularMaterialModule,
+        FlexLayoutModule, FormsModule, ReactiveFormsModule, MatButtonModule, FontAwesomeModule,
+    ],
+    providers: [],
+    bootstrap: [AppComponent],
+    schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class AppModule { }
