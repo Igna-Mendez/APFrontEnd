@@ -4,8 +4,6 @@ import { AngularMaterialModule } from '../angular-material-module';
 import { MatButtonModule } from '@angular/material/button';
 import { SigninComponent } from '../components/signin/signin.component';
 import { RegisterComponent } from '../components/register/register.component';
-import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
-import { faGit } from '@fortawesome/free-brands-svg-icons';
 
 @Component({
   selector: 'app-header',
@@ -24,12 +22,9 @@ export class HeaderComponent implements OnInit {
 
     dialogConfig.disableClose = false;
     dialogConfig.autoFocus = true; */
-    const dialogRef = this.dialog.open(SigninComponent, {
-        height: '400px',
-        width: '600px',
-      });
+    const dialogRef = this.dialog.open(SigninComponent);
   }
-  openRegister() {
+  openRegister() : void {
   
     const dialogConfig = new MatDialogConfig();
 

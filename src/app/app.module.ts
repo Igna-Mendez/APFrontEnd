@@ -17,6 +17,11 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faGit } from '@fortawesome/free-brands-svg-icons';
+import { AboutComponent } from './about/about.component';
+import { FormacionComponent } from './formacion/formacion.component';
+import { ExperienciaComponent } from './experiencia/experiencia.component';
+import { SkillsComponent } from './skills/skills.component';
+import { ProgressBarAngularModule } from 'progress-bar-angular';
 
 @NgModule({
     declarations: [
@@ -24,6 +29,12 @@ import { faGit } from '@fortawesome/free-brands-svg-icons';
         HeaderComponent,
         SigninComponent,
         RegisterComponent,
+        AboutComponent,
+        FormacionComponent,
+        ExperienciaComponent,
+        SkillsComponent,
+        
+        
     ],
     imports: [
         BrowserModule,
@@ -31,7 +42,7 @@ import { faGit } from '@fortawesome/free-brands-svg-icons';
         MatDialogModule,
         BrowserAnimationsModule,
         AngularMaterialModule,
-        FlexLayoutModule, FormsModule, ReactiveFormsModule, MatButtonModule, FontAwesomeModule,
+        FlexLayoutModule, FormsModule, ReactiveFormsModule, MatButtonModule, FontAwesomeModule,ProgressBarAngularModule
     ],
     providers: [],
     bootstrap: [AppComponent],
