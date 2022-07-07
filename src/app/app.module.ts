@@ -21,7 +21,8 @@ import { AboutComponent } from './about/about.component';
 import { FormacionComponent } from './formacion/formacion.component';
 import { ExperienciaComponent } from './experiencia/experiencia.component';
 import { SkillsComponent } from './skills/skills.component';
-import { ProgressBarAngularModule } from 'progress-bar-angular';
+import {MatProgressBarModule} from '@angular/material/progress-bar';
+import { ProyectosComponent } from './proyectos/proyectos.component'; 
 
 @NgModule({
     declarations: [
@@ -33,6 +34,7 @@ import { ProgressBarAngularModule } from 'progress-bar-angular';
         FormacionComponent,
         ExperienciaComponent,
         SkillsComponent,
+        ProyectosComponent,
         
         
     ],
@@ -42,7 +44,7 @@ import { ProgressBarAngularModule } from 'progress-bar-angular';
         MatDialogModule,
         BrowserAnimationsModule,
         AngularMaterialModule,
-        FlexLayoutModule, FormsModule, ReactiveFormsModule, MatButtonModule, FontAwesomeModule,ProgressBarAngularModule
+        FlexLayoutModule, FormsModule, ReactiveFormsModule, MatButtonModule, FontAwesomeModule,MatProgressBarModule,
     ],
     providers: [],
     bootstrap: [AppComponent],
