@@ -4,11 +4,11 @@
     
     <button class="btn btn-primary "role="button" (click)="openRegister()">Login</button>
     <a class="nav-link active" href="#">Home</a>
-    <a class="nav-link" href='app-about'>About me</a>
-    <a class="nav-link" href="#">Contact me!</a>
+    <a [routerLink]="['/About']" href='about'>About me</a>
+    <a class="nav-link" href="">Contact me!</a>
     <div class="wrapper">
-    <i class="fa fa-linkedin fa-3x m-2"></i> 
-    <i class="fa fa-github fa-3x m-2"></i>
+    <i class="fa fa-linkedin fa-2x m-2"></i> 
+    <i class="fa fa-github fa-2x m-2"></i>
     
   </div>
 </div>
