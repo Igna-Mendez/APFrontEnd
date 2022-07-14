@@ -21,8 +21,13 @@
     -webkit-box-shadow: none;
     box-shadow: none;
     color: #FFFFFF;
-    padding-top: 20px;
+    
  }
  .fa{
   color: #0a58ca;
  }
+.APLogo{
+ height: 5rem;
+ width: 7rem;
+
+}
