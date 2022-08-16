@@ -1,0 +1,22 @@
+<div class="container view  colorgrid">
+ <div class="d-flex">   
+<div class="row-m-6 "> 
+<mat-card class="colorgrid" *ngIf="user" > 
+    <mat-card-title>{{user.name}}{{user.lastName}}</mat-card-title>
+    
+    <mat-card-subtitle>{{user.title}}</mat-card-subtitle>
+    <img mat-card-img src='./assets/img/igna.jpg' height="200px" class="rounded-circle">
+   
+   
+    
+</mat-card>
+ </div> 
+ <div class="row-m-6 ">
+    <mat-card class="colorgrid">
+        <mat-card-title>Acerca de mi <i class="fas fa-edit fa-1x mr-2"></i></mat-card-title>
+    
+        <mat-card-content>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus hic tenetur modi architecto adipisci eligendi obcaecati minus sequi id? Assumenda dolores aliquam aperiam iusto!</mat-card-content>
+    </mat-card>
+ </div>   
+</div>
+</div>
