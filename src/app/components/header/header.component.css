@@ -1,0 +1,34 @@
+.navbar-expand-lg {
+  justify-content: center;
+
+}
+
+.mask {
+  height: 350px;
+}
+
+.static-top {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
+
+.navbar-transparent {
+  background-color: transparent !important;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  color: #FFFFFF;
+
+}
+
+.fa {
+  color: #0a58ca;
+}
+
+.APLogo {
+  height: 7rem;
+  width: 10rem;
+ 
+}
