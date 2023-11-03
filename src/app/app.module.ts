@@ -1,10 +1,8 @@
 import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
-
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatButtonModule } from '@angular/material/button';
@@ -20,6 +18,7 @@ import { RegisterComponent } from './components/register/register.component';
 import { SigninComponent } from './components/signin/signin.component';
 import { SkillsComponent } from './components/skills/skills.component';
 import { StudiesComponent } from './components/studies/studies.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
     declarations: [
@@ -40,7 +39,9 @@ import { StudiesComponent } from './components/studies/studies.component';
         MatDialogModule,
         BrowserAnimationsModule,
         AngularMaterialModule,
-        FlexLayoutModule, FormsModule, ReactiveFormsModule, MatButtonModule, FontAwesomeModule,MatProgressBarModule,
+        FlexLayoutModule, FormsModule, ReactiveFormsModule, 
+        MatButtonModule, FontAwesomeModule,MatProgressBarModule,
+        HttpClientModule, 
     ],
     providers: [],
     bootstrap: [AppComponent],
